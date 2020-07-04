@@ -22,7 +22,7 @@ Download the script by cloning this repository via git:
 
  Now run the script:
     
-    $ ./cross_compile_ffmpeg.sh
+    $ ./cross_compile_ffmpeg.sh --disable-nonfree=y --sandbox-ok=y --compiler-flavors=win64 --build-ffmpeg-static=n --build-ffmpeg-shared=y --build-amd-amf=n --enable-gpl=y --build-libmxf=y
 
 Answer the prompts.
 It should end up with a working, statically-built ffmpeg.exe binary within the "`sandbox/*/ffmpeg_git`" director(ies).
