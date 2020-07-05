@@ -1621,8 +1621,8 @@ build_libsrt() {
   #cd srt_git
   #download_and_unpack_file https://codeload.github.com/Haivision/srt/tar.gz/v1.3.2 srt-1.3.2
   #download_and_unpack_file https://github.com/Haivision/srt/archive/v1.4.1.tar.gz srt-1.4.1
-  download_and_unpack_file https://github.com/vidanio/srt/archive/v1.5.0-rc1.tar.gz srt-1.4.1  
-  cd srt-1.4.1 
+  download_and_unpack_file https://github.com/vidanio/srt/archive/v1.5.0-rc1.tar.gz srt-1.5.0-rc1  
+  cd srt-1.5.0-rc1 
     if [[ $compiler_flavors != "native" ]]; then
       do_cmake "-DUSE_GNUTLS=ON -DENABLE_SHARED=OFF"
       apply_patch file://$patch_dir/srt.app.patch -p1
